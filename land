@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAJIDI LAND</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Noto+Sans+Arabic:wght@700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000; min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: 'Noto Sans Arabic', sans-serif; overflow: hidden; }
+        .card { width: 90%; max-width: 380px; background: #0a0a0a; border-radius: 40px; padding: 50px 20px; text-align: center; position: relative; border: 1px solid rgba(212, 175, 55, 0.2); }
+        .side-emoji { position: absolute; font-size: 22px; animation: side-float 3s infinite ease-in-out; }
+        .e1 { top: 20px; left: 20px; } .e2 { top: 20px; right: 20px; animation-delay: 0.5s; }
+        .e3 { bottom: 20px; left: 20px; animation-delay: 1s; } .e4 { bottom: 20px; right: 20px; animation-delay: 1.5s; }
+        @keyframes side-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .main-dino { font-size: 85px; display: block; margin-bottom: 10px; filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.4)); animation: float 3s infinite ease-in-out; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        h1 { font-family: 'Orbitron', sans-serif; color: #d4af37; font-size: 24px; letter-spacing: 4px; margin-bottom: 30px; }
+        .led-box { position: relative; margin-bottom: 18px; padding: 3px; background: rgba(212, 175, 55, 0.1); border-radius: 15px; overflow: hidden; }
+        .led-box::before { content: ''; position: absolute; width: 150%; height: 500%; background: conic-gradient(#d4af37, transparent, transparent, #d4af37); animation: rotate-led 3s linear infinite; }
+        .content { position: relative; width: 100%; background: #0a0a0a; border-radius: 12px; padding: 15px; color: #fff; font-weight: bold; z-index: 2; text-decoration: none; display: block; }
+        @keyframes rotate-led { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="side-emoji e1">🦖</span> <span class="side-emoji e2">🎡</span>
+        <span class="side-emoji e3">⚓️</span> <span class="side-emoji e4"></span>
+        <span class="main-dino">🦖</span>
+        <h1>MAJIDI LAND</h1>
+        <div class="led-box"><div class="content">بەخێربێن بۆ شاری یاری ماجدی لاند</div></div>
+        <div class="led-box"><a href="https://www.tiktok.com/@majideland" class="content">TIKTOK</a></div>
+        <div class="led-box"><a href="https://www.instagram.com/majidiiland" class="content">INSTAGRAM</a></div>
+        <div class="led-box"><a href="https://snapchat.com/t/g5SzHu1f" class="content">SNAPCHAT</a></div>
+    </div>
+</body>
+</html>
